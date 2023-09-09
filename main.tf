@@ -123,6 +123,9 @@ resource "aws_eip" "nat_gateway_eip" {
   }
 }
 
+
+
+
 #Create NAT Gateway
 resource "aws_nat_gateway" "nat_gateway" {
   depends_on    = [aws_subnet.public_subnets]
